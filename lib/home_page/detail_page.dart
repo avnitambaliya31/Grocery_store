@@ -73,11 +73,14 @@ class _DetailPageState extends State<DetailPage> {
                             Expanded(
                               child: Hero(
                                 tag: "${widget.products!.id}",
-                                child: Image.asset(
-                                  widget.products!.image!,
-                                  fit: BoxFit.contain,
-                                  height: 240,
-                                  // width: 150,
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 20.0),
+                                  child: Image.asset(
+                                    widget.products!.image!,
+                                    fit: BoxFit.contain,
+                                    height: 240,
+                                    // width: 150,
+                                  ),
                                 ),
                               ),
                             )
