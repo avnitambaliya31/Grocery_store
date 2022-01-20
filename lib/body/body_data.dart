@@ -56,7 +56,7 @@ class _BodyDataState extends State<BodyData> {
                 itemCount: products.length,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
-                    childAspectRatio: 0.95,
+                    childAspectRatio: 0.85,
                     // crossAxisSpacing: kDafualtPadding,
                     mainAxisSpacing: 10),
                 itemBuilder: (context, index) => gridBuilderData(index, () {
@@ -107,7 +107,7 @@ class _BodyDataState extends State<BodyData> {
         children: [
           Container(
             height: 190,
-            width: 190,
+            width: 175,
             decoration: BoxDecoration(
               color: products[index].color,
               borderRadius: BorderRadius.circular(20),
